@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/ -->
+<html lang="en" style="transform: none;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>An open source and production-ready motion library for React</title>
+<link rel="stylesheet" href="./An open source and production-ready motion library for React_files/screen.css">
+<link rel="shortcut icon" href="https://reactjsexample.com/favicon.png" type="image/png">
+<link rel="canonical" href="https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<link rel="amphtml" href="https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/amp/">
+<meta property="og:site_name" content="React.js Examples">
+<meta property="og:type" content="article">
+<meta property="og:title" content="An open source and production-ready motion library for React">
+<meta property="og:description" content="Motion is an open source, production-ready library that&#39;s designed for all creative developers.">
+<meta property="og:url" content="https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/">
+<meta property="og:image" content="https://reactjsexample.com/content/images/2020/04/motion.png">
+<meta property="article:published_time" content="2020-04-29T12:29:52.000Z">
+<meta property="article:modified_time" content="2020-04-29T12:29:52.000Z">
+<meta property="article:tag" content="Animation">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="An open source and production-ready motion library for React">
+<meta name="twitter:description" content="Motion is an open source, production-ready library that&#39;s designed for all creative developers.">
+<meta name="twitter:url" content="https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/">
+<meta name="twitter:image" content="https://reactjsexample.com/content/images/2020/04/motion.png">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="React">
+<meta name="twitter:label2" content="Filed under">
+<meta name="twitter:data2" content="Animation">
+<meta property="og:image:width" content="312">
+<meta property="og:image:height" content="211">
+<script type="text/javascript" async="" src="./An open source and production-ready motion library for React_files/analytics.js.download"></script><script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "React.js Examples",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://reactjsexample.com/content/images/2018/01/reactjsexample.png",
+            "width": 259,
+            "height": 55
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "React",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/1f87c1c5e9ccda422d03821987e2cbe5?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "https://reactjsexample.com/author/react/",
+        "sameAs": []
+    },
+    "headline": "An open source and production-ready motion library for React",
+    "url": "https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/",
+    "datePublished": "2020-04-29T12:29:52.000Z",
+    "dateModified": "2020-04-29T12:29:52.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://reactjsexample.com/content/images/2020/04/motion.png",
+        "width": 312,
+        "height": 211
+    },
+    "keywords": "Animation",
+    "description": "Motion is an open source, production-ready library that&#x27;s designed for all creative developers.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://reactjsexample.com/"
+    }
+}
+    </script>
+<script src="./An open source and production-ready motion library for React_files/ghost-sdk.min.js.download"></script>
+<script>
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "1d7f6785c5cb"
+});
+</script>
+<meta name="generator" content="Ghost 1.26">
+ <link rel="alternate" type="application/rss+xml" title="React.js Examples" href="https://reactjsexample.com/rss/">
+
+<script async="" src="./An open source and production-ready motion library for React_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-82839383-1');
+</script>
+<script async="" src="./An open source and production-ready motion library for React_files/f.txt" crossorigin="anonymous"></script>
+<style id="isso-style" type="text/css">#isso-thread * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#isso-thread .isso-comment-header a {
+    text-decoration: none;
+}
+
+#isso-thread {
+    padding: 0;
+    margin: 0;
+}
+#isso-thread > h4 {
+    color: #555;
+    font-weight: bold;
+}
+#isso-thread > .isso-feedlink {
+    float: right;
+    padding-left: 1em;
+}
+#isso-thread > .isso-feedlink > a {
+    font-size: 0.8em;
+    vertical-align: bottom;
+}
+#isso-thread .textarea {
+    min-height: 58px;
+    outline: 0;
+}
+#isso-thread .textarea.placeholder {
+    color: #757575;
+}
+
+#isso-root .isso-comment {
+    max-width: 68em;
+    padding-top: 0.95em;
+    margin: 0.95em auto;
+}
+#isso-root .preview .isso-comment {
+    padding-top: 0;
+    margin: 0;
+}
+#isso-root .isso-comment:not(:first-of-type),
+.isso-follow-up .isso-comment {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.isso-comment > div.avatar {
+    display: block;
+    float: left;
+    width: 7%;
+    margin: 3px 15px 0 0;
+}
+.isso-comment > div.avatar > svg {
+    max-width: 48px;
+    max-height: 48px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.isso-comment > div.text-wrapper {
+    display: block;
+}
+.isso-comment .isso-follow-up {
+    padding-left: calc(7% + 20px);
+}
+.isso-comment > div.text-wrapper > .isso-comment-header, .isso-comment > div.text-wrapper > .isso-comment-footer {
+    font-size: 0.95em;
+}
+.isso-comment > div.text-wrapper > .isso-comment-header {
+    font-size: 0.85em;
+}
+.isso-comment > div.text-wrapper > .isso-comment-header .spacer {
+    padding: 0 6px;
+}
+.isso-comment > div.text-wrapper > .isso-comment-header .spacer,
+.isso-comment > div.text-wrapper > .isso-comment-header a.permalink,
+.isso-comment > div.text-wrapper > .isso-comment-header .note,
+.isso-comment > div.text-wrapper > .isso-comment-header a.parent {
+    color: gray !important;
+    font-weight: normal;
+    text-shadow: none !important;
+}
+.isso-comment > div.text-wrapper > .isso-comment-header .spacer:hover,
+.isso-comment > div.text-wrapper > .isso-comment-header a.permalink:hover,
+.isso-comment > div.text-wrapper > .isso-comment-header .note:hover,
+.isso-comment > div.text-wrapper > .isso-comment-header a.parent:hover {
+    color: #606060 !important;
+}
+.isso-comment > div.text-wrapper > .isso-comment-header .note {
+    float: right;
+}
+.isso-comment > div.text-wrapper > .isso-comment-header .author {
+    font-weight: bold;
+    color: #555;
+}
+.isso-comment > div.text-wrapper > .textarea-wrapper .textarea,
+.isso-comment > div.text-wrapper > .textarea-wrapper .preview {
+    margin-top: 0.2em;
+}
+.isso-comment > div.text-wrapper > div.text p {
+    margin-top: 0.2em;
+}
+.isso-comment > div.text-wrapper > div.text p:last-child {
+    margin-bottom: 0.2em;
+}
+.isso-comment > div.text-wrapper > div.text h1,
+.isso-comment > div.text-wrapper > div.text h2,
+.isso-comment > div.text-wrapper > div.text h3,
+.isso-comment > div.text-wrapper > div.text h4,
+.isso-comment > div.text-wrapper > div.text h5,
+.isso-comment > div.text-wrapper > div.text h6 {
+    font-size: 130%;
+    font-weight: bold;
+}
+.isso-comment > div.text-wrapper > div.textarea-wrapper .textarea,
+.isso-comment > div.text-wrapper > div.textarea-wrapper .preview {
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #888;
+}
+.isso-comment > div.text-wrapper > .isso-comment-footer {
+    font-size: 0.80em;
+    color: gray !important;
+    clear: left;
+}
+.isso-feedlink,
+.isso-comment > div.text-wrapper > .isso-comment-footer a {
+    font-weight: bold;
+    text-decoration: none;
+}
+.isso-feedlink:hover,
+.isso-comment > div.text-wrapper > .isso-comment-footer a:hover {
+    color: #111111 !important;
+    text-shadow: #aaaaaa 0 0 1px !important;
+}
+.isso-comment > div.text-wrapper > .isso-comment-footer > a {
+    position: relative;
+    top: .2em;
+}
+.isso-comment > div.text-wrapper > .isso-comment-footer > a + a {
+    padding-left: 1em;
+}
+.isso-comment > div.text-wrapper > .isso-comment-footer .votes {
+    color: gray;
+}
+.isso-comment > div.text-wrapper > .isso-comment-footer .upvote svg,
+.isso-comment > div.text-wrapper > .isso-comment-footer .downvote svg {
+    position: relative;
+    top: .2em;
+}
+.isso-comment .isso-postbox {
+    margin-top: 0.8em;
+}
+.isso-comment.isso-no-votes > * > .isso-comment-footer span.votes {
+    display: none;
+}
+
+.isso-postbox {
+    max-width: 68em;
+    margin: 0 auto 2em;
+    clear: right;
+}
+.isso-postbox > .form-wrapper {
+    display: block;
+    padding: 0;
+}
+.isso-postbox > .form-wrapper > .auth-section,
+.isso-postbox > .form-wrapper > .auth-section .post-action {
+    display: block;
+}
+.isso-postbox > .form-wrapper .textarea,
+.isso-postbox > .form-wrapper .preview {
+    margin: 0 0 .3em;
+    padding: .4em .8em;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.isso-postbox > .form-wrapper input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    margin-left: 0;
+}
+.isso-postbox > .form-wrapper .notification-section {
+    font-size: 0.90em;
+    padding-top: .3em;
+}
+#isso-thread .textarea:focus,
+#isso-thread input:focus {
+    border-color: rgba(0, 0, 0, 0.8);
+}
+.isso-postbox > .form-wrapper > .auth-section .input-wrapper {
+    display: inline-block;
+    position: relative;
+    max-width: 25%;
+    margin: 0;
+}
+.isso-postbox > .form-wrapper > .auth-section .input-wrapper input {
+    padding: .3em 10px;
+    max-width: 100%;
+    border-radius: 3px;
+    background-color: #fff;
+    line-height: 1.4em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.isso-postbox > .form-wrapper > .auth-section .post-action {
+    display: inline-block;
+    float: right;
+    margin: 0 0 0 5px;
+}
+.isso-postbox > .form-wrapper > .auth-section .post-action > input {
+    padding: calc(.3em - 1px);
+    border-radius: 2px;
+    border: 1px solid #CCC;
+    background-color: #DDD;
+    cursor: pointer;
+    outline: 0;
+    line-height: 1.4em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.isso-postbox > .form-wrapper > .auth-section .post-action > input:hover {
+    background-color: #CCC;
+}
+.isso-postbox > .form-wrapper > .auth-section .post-action > input:active {
+    background-color: #BBB;
+}
+.isso-postbox > .form-wrapper .preview,
+.isso-postbox > .form-wrapper input[name="edit"],
+.isso-postbox.preview-mode > .form-wrapper input[name="preview"],
+.isso-postbox.preview-mode > .form-wrapper .textarea {
+    display: none;
+}
+.isso-postbox.preview-mode > .form-wrapper .preview {
+    display: block;
+}
+.isso-postbox.preview-mode > .form-wrapper input[name="edit"] {
+    display: inline;
+}
+.isso-postbox > .form-wrapper .preview {
+    background-color: #f8f8f8;
+    background: repeating-linear-gradient(
+        -45deg,
+        #f8f8f8,
+        #f8f8f8 10px,
+        #fff 10px,
+        #fff 20px
+    );
+}
+.isso-postbox > .form-wrapper > .notification-section {
+    display: none;
+    padding-bottom: 10px;
+}
+@media screen and (max-width:600px) {
+    .isso-postbox > .form-wrapper > .auth-section .input-wrapper {
+        display: block;
+        max-width: 100%;
+        margin: 0 0 .3em;
+    }
+    .isso-postbox > .form-wrapper > .auth-section .input-wrapper input {
+        width: 100%;
+    }
+}
+</style><style type="text/css">.github-box *{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}.github-box{font-family:helvetica,arial,sans-serif;font-size:13px;line-height:18px;background:#fafafa;border:1px solid #ddd;color:#666;border-radius:3px}.github-box a{color:#4183c4;border:0;text-decoration:none}.github-box .github-box-title{position:relative;border-bottom:1px solid #ddd;border-radius:3px 3px 0 0;background:#fcfcfc;background:-moz-linear-gradient(#fcfcfc,#ebebeb);background:-webkit-linear-gradient(#fcfcfc,#ebebeb);}.github-box .github-box-title h3{word-wrap:break-word;font-family:helvetica,arial,sans-serif;font-weight:normal;font-size:16px;color:gray;margin:0;padding:10px 10px 10px 30px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAXCAMAAAAx3e/WAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEQjIyNkJERkM0NjYxMUUxOEFDQzk3ODcxRDkzRjhCRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEQjIyNkJFMEM0NjYxMUUxOEFDQzk3ODcxRDkzRjhCRSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkRCMjI2QkREQzQ2NjExRTE4QUNDOTc4NzFEOTNGOEJFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkRCMjI2QkRFQzQ2NjExRTE4QUNDOTc4NzFEOTNGOEJFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+dka2KgAAAEVQTFRFxMTEyMjI0tLSvb29vr6+zc3Ny8vLxcXFz8/P6enp3t7ex8fH0dHR1NTUw8PDwMDAzs7OvLy8wcHBu7u7v7+/zMzM////budQFwAAABd0Uk5T/////////////////////////////wDmQOZeAAAAcklEQVR42tSQSQ7DMAwD6chOukWs5eX/Ty2coo0T9wOdEzEgdRBuzNmnDofgja52JDyz5TCqUp0O6kfrb4bzSXkRiTviEZZ6JKLMJ5VQ2v8iGbtbfEwXmjFMG0VwdQo10hQNxYqtLMv9O6xvpZ/QeAkwAKjwHiJLaJc3AAAAAElFTkSuQmCC) 7px center no-repeat; width: auto;}.github-box .github-box-title h3 .repo{font-weight:bold}.github-box .github-box-title .github-stats{float:right;position:absolute;top:8px;right:10px;font-size:11px;font-weight:bold;line-height:21px;height:auto;min-height:21px}.github-box .github-box-title .github-stats a{display:inline-block;height:21px;color:#666;border:1px solid #ddd;border-radius:3px;padding:0 5px 0 18px;background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAqCAMAAACEJ4viAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEQjIyNkJEQkM0NjYxMUUxOEFDQzk3ODcxRDkzRjhCRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEQjIyNkJEQ0M0NjYxMUUxOEFDQzk3ODcxRDkzRjhCRSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkRCMjI2QkQ5QzQ2NjExRTE4QUNDOTc4NzFEOTNGOEJFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkRCMjI2QkRBQzQ2NjExRTE4QUNDOTc4NzFEOTNGOEJFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+h1kA9gAAAK5QTFRF+fn5sbGx8fHx09PTmpqa2dnZ/f3919fX9PT00NDQ1dXVpKSk+vr6+/v7vb298vLyycnJ8/PztLS0zc3N6enp/v7+q6ur2NjY9/f3srKy/Pz8p6en7u7uoaGhnJyc4eHhtbW1pqam6Ojo9fX17e3toqKirKys1NTUzs7Ox8fHwcHBwMDA5eXlnZ2dpaWl0dHR9vb25ubm4uLi3d3dqqqqwsLCv7+/oKCgmZmZ////8yEsbwAAAMBJREFUeNrE0tcOgjAUBuDSliUoMhTEvfdef9//xUQjgaLX0Ium/ZLT/+SkRPxZpGykvuf5VMJogy5jY9yjDHcWFhqlcRuHc4o6B1QK0BDg+hcZgNDh3NWTwzItH/bRrhvT+g3zSxZkNGCZpoWGIbU0a3Y6zV5VA6keyeDxiw62P0gUqEW0FbDim4nVikFJbU2zZXybUEaxhCqOQqyh5/G0wpWICUwthyqwD4InOMuXJ7/gs7WkoPdVg1vykF8CDACEFanKO3aSYwAAAABJRU5ErkJggg==) no-repeat}.github-box .github-box-title .github-stats .watchers{border-right:1px solid #ddd}.github-box .github-box-title .github-stats .forks{background-position:-4px -21px;padding-left:15px}.github-box .github-box-content{padding:10px;font-weight:300}.github-box .github-box-content p{margin:0}.github-box .github-box-content .link{font-weight:bold}.github-box .github-box-download{position:relative;border-top:1px solid #ddd;background:white;border-radius:0 0 3px 3px;padding:10px;height:auto;min-height:24px;}.github-box .github-box-download .updated{word-wrap:break-word;margin:0;font-size:11px;color:#666;line-height:24px;font-weight:300;width:auto}.github-box .github-box-download .updated strong{font-weight:bold;color:#000}.github-box .github-box-download .download{float:right;position:absolute;top:10px;right:10px;height:24px;line-height:24px;font-size:12px;color:#666;font-weight:bold;text-shadow:0 1px 0 rgba(255,255,255,0.9);padding:0 10px;border:1px solid #ddd;border-bottom-color:#bbb;border-radius:3px;background:#f5f5f5;background:-moz-linear-gradient(#f5f5f5,#e5e5e5);background:-webkit-linear-gradient(#f5f5f5,#e5e5e5);}.github-box .github-box-download .download:hover{color:#527894;border-color:#cfe3ed;border-bottom-color:#9fc7db;background:#f1f7fa;background:-moz-linear-gradient(#f1f7fa,#dbeaf1);background:-webkit-linear-gradient(#f1f7fa,#dbeaf1);}@media (max-width: 767px) {.github-box .github-box-title{height:auto;min-height:60px}.github-box .github-box-title h3 .repo{display:block}.github-box .github-box-title .github-stats a{display:block;clear:right;float:right;}.github-box .github-box-download{height:auto;min-height:46px;}.github-box .github-box-download .download{top:32px;}}</style><style>.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style></head>
+<body class="post-template tag-animation" style="transform: none;" data-new-gr-c-s-check-loaded="14.1079.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+<nav id="navbar" class="navbar is-fixed-top is-transparent" style="
+        transform: translateY(-60px);
+      ">
+<div id="specialShadow" class="bd-special-shadow" style="opacity: 0.3; transform: scaleY(0);"></div>
+<div class="container">
+<div class="navbar-brand">
+<a class="navbar-item" href="https://reactjsexample.com/">
+<img src="./An open source and production-ready motion library for React_files/favicon.png" alt=" React.js Examples" width="38" height="38">
+</a>
+<a class="navbar-item " href="https://reactjsexample.com/">
+React.js Examples
+</a>
+<div id="navbarBurger" class="navbar-burger burger" data-target="navMenuIndex">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div id="navMenuIndex" class="navbar-menu">
+<div class="navbar-start">
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="https://reactjsexample.com/tag/ui/">
+Ui
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="https://reactjsexample.com/tag/templates/">Templates</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/material-design/">Material design</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/list/">List</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/cards/">Cards</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/infinite-scroll/">Infinite Scroll</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/bootstrap/">Bootstrap</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/table/">Table</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/layout/">Layout</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/scroll/">Scroll</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/single-page/">Single Page</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/responsive/">Responsive</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/style/">Style</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/admin-template/">Admin Templates</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/ui/">All UI</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/#">
+Media
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="https://reactjsexample.com/tag/slides/">Slides</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/slider/">Slider</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/chart/">Chart</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/lightbox/">Lightbox</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/video/">Video</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/gallery/">Gallery</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/carousel/">Carousel</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/images/">Images</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/player/">Player</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/audio/">Audio</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/music/">Music</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/movies/">Movies</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/maps/">Maps</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/#">
+Elements
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="https://reactjsexample.com/tag/calculator/">Calculator</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/drag/">Drag</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/tooltip/">Tooltip</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/notifications/">Notifications</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/pagination/">Pagination</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/toggle/">Toggle</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/icons/">Icons</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/emoji/">Emoji</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/progress/">Progress</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/loading/">Loading</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/svg/">Svg</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/accordion/">Accordion</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/modals/">Modals</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/popup/">Popup</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/dialogs/">Dialogs</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/color/">Color </a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/clock/">Clock</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/avatar/">Avatar</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/circular/">Circular</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/sticky/">Sticky</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="https://reactjsexample.com/tag/input/">
+Input
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="https://reactjsexample.com/tag/calendar/">Calendar</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/form/">Form</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/select/">Select</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/date/">Date</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/typography/">Typography</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/textarea/">Textarea</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/message/">Message</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/upload/">Upload</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/notes/">Notes</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/text/">Text</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/search/">Search</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/data/">Data</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/editor/">Editor</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/autocomplete/">Autocomplete</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/inbox/">Inbox</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/time/">Time</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/markdown/">Markdown</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/input/">Input</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="https://reactjsexample.com/tag/menu/">
+Menu
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="https://reactjsexample.com/tag/dropdown/">Dropdown</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/navbar/">Navbar</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/navigator/">Navigator</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/swipe/">Swipe</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/tabbar/">Tabbar</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/sidebar/">Sidebar</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/intro/">Intro</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/button/">Button</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/tabs/">Tabs</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/drag-drop/">Drag/Drop</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/dock/">Dock</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/fixed/">Fixed</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/tree/">Tree</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/menu/">Menu</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/#">
+More
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="https://reactjsexample.com/tag/animation/">Animation</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/games/">Games</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/mobile/">Mobile</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/todo/">Todo</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/vote/">Vote</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/sortable/">Sortable</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/weather/">Weather</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/resizable/">Resizable</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/skillbars/">Skillbars</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/framework/">Framework</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/miscellaneous/">Miscellaneous</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/books/">Books</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/overlay/">Overlay</a>
+</div>
+</div>
+</div>
+<div class="navbar-end">
+<div class="gxx_search" id="bdcs">
+<form action="https://www.google.com/search" method="get" target="_blank">
+<input type="search" name="q" value="" placeholder="Search">
+<input type="hidden" name="ie" value="UTF-8">
+<input type="hidden" name="oe" value="UTF-8">
+<input type="hidden" name="hl" value="en">
+<input type="hidden" name="domains" value="reactjsexample.com">
+<input type="hidden" name="sitesearch" value="reactjsexample.com">
+<input type="submit" class="gxxicon" value="">
+</form>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<section class="ggcontent hidden-xs">
+<script async="" src="./An open source and production-ready motion library for React_files/f.txt" crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:1130px;height:250px" data-ad-client="ca-pub-5680150941998747" data-ad-slot="3755220091"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+<div class="site" style="transform: none;">
+<div class="site-content" style="transform: none;">
+<div class="container" style="transform: none;">
+<div class="row" style="transform: none;">
+<div class="content-column col-xl-9 col-lg-8">
+<div class="content-area">
+<main class="site-main">
+<article class="post tag-animation single u-shadow">
+<header class="post-header">
+<a class="post-tag" href="https://reactjsexample.com/tag/animation/">Animation</a>
+<h1 class="post-title">
+An open source and production-ready motion library for React
+</h1>
+</header> <div class="post-meta">
+<time class="post-meta-date" datetime="2020-04-29">
+Apr 29, 2020
+</time>
+<span class="post-meta-length">1 min read</span>
+</div>
+<div class="post-media2">
+<div class="u-placeholder">
+<a class="post-image-link" href="https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/">
+<img class="post-image lazyautosizes lazyloaded" data-srcset="/content/images/2020/04/motion.png 400w, /content/images/2020/04/motion.png 750w, /content/images/2020/04/motion.png 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="An open source and production-ready motion library for React" sizes="799px" srcset="/content/images/2020/04/motion.png 400w, /content/images/2020/04/motion.png 750w, /content/images/2020/04/motion.png 960w">
+</a>
+</div>
+</div>
+<div class="content-wrapper">
+<div class="post-content u-text-format">
+<div class="kg-card-markdown"><h2 id="motion">Motion</h2>
+<p>Motion is an open source, production-ready library that's designed for all creative developers.</p>
+<div class="ct-demo-links">
+<a class="ct-demo-link ct-demo-link--view" href="https://framer.com/api/motion" target="_blank" rel="noopener">View Demo</a>
+<a class="ct-demo-link ct-demo-link--download" href="https://github.com/framer/motion" target="_blank" rel="noopener">View Github</a>
+</div>
+It looks like this:
+<div class="code-toolbar"><pre class=" language-jsx"><code class=" language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>motion.div</span> <span class="token attr-name">animate</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> x<span class="token punctuation">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>React JSX</span></div></div></div>
+<p>And does this:</p>
+<ul>
+<li>Spring physics</li>
+<li>Keyframes</li>
+<li>Drag</li>
+<li>SVG paths</li>
+<li>Server-side rendering</li>
+<li>Pose-inspired tree animations</li>
+<li>CSS variables</li>
+<li>Position transitions</li>
+<li>Unmount transitions</li>
+</ul>
+<p>...and a whole lot more.</p>
+<h2 id="getstarted">Get started</h2>
+<h3 id="quickstart">Quick start</h3>
+<pre><code>npm install framer-motion
+</code></pre>
+<div class="code-toolbar"><pre class=" language-jsx"><code class=" language-jsx"><span class="token keyword">import</span> <span class="token punctuation">{</span> motion <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"framer-motion"</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">MyComponent</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> isVisible <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>motion.div</span> <span class="token attr-name">animate</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> opacity<span class="token punctuation">:</span> isVisible <span class="token operator">?</span> <span class="token number">1</span> <span class="token punctuation">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+)
+</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>React JSX</span></div></div></div>
+<h2 id="github">GitHub</h2>
+<div class="github-widget" data-repo="framer/motion"><div class="github-box repo"><div class="github-box-title"><h3><a class="owner" href="http://github.com/framer" title="http://github.com/framer">framer</a>/<a class="repo" href="http://github.com/framer/motion" title="http://github.com/framer/motion">motion</a></h3><div class="github-stats"><a class="watchers" href="http://github.com/framer/motion/watchers" title="See watchers">15870</a><a class="forks" href="http://github.com/framer/motion/network/members" title="See forkers">488</a></div></div><div class="github-box-content"><p class="description"><span>Open source, production-ready animation and gesture library for React</span> — <a href="http://github.com/framer/motion#readme">Read More</a></p><p class="link"><a href="https://framer.com/motion">https://framer.com/motion</a></p></div><div class="github-box-download"><div class="updated">Latest commit to the <strong>main</strong> branch on 9-12-2022</div><a class="download" href="http://github.com/framer/motion/zipball/master" title="Get an archive of this repository">Download as zip</a></div></div></div></div>
+<section id="isso-thread"><h4>No Comments Yet</h4><div class="isso-postbox"><div class="form-wrapper"><div class="textarea-wrapper"><div contenteditable="true" class="textarea placeholder">Type Comment Here (at least 3 chars)</div><div class="preview"><div class="isso-comment"><div class="text-wrapper"><div class="text"></div></div></div></div></div><section class="auth-section"><p class="input-wrapper"><input type="text" name="author" placeholder="Name" value=""></p><p class="input-wrapper"><input type="email" name="email" placeholder="E-mail" value=""></p><p class="input-wrapper"><input type="text" name="website" placeholder="Website (optional)" value=""></p><p class="post-action"><input type="submit" value="Submit"></p><p class="post-action"><input type="button" name="preview" value="Preview"></p><p class="post-action"><input type="button" name="edit" value="Edit"></p></section><section class="notification-section" style="display: none;"><label><input type="checkbox" name="notification">Subscribe to email notification of replies</label></section></div></div><div id="isso-root"></div></section>
+</div>
+<div class="post-tags">
+<a class="tag tag-animation" href="https://reactjsexample.com/tag/animation/" title="Animation">Animation</a>
+</div>
+<div class="share u-hover-wrapper">
+<a class="share-item share-facebook u-hover-item" href="https://www.facebook.com/sharer.php?u=https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/" target="_blank" rel="noopener"><i class="icon icon-facebook"></i></a>
+<a class="share-item share-twitter u-hover-item" href="https://twitter.com/intent/tweet?url=https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/&amp;text=An%20open%20source%20and%20production-ready%20motion%20library%20for%20React" target="_blank" rel="noopener"><i class="icon icon-twitter"></i></a>
+<a class="share-item share-pinterest u-hover-item" href="https://pinterest.com/pin/create/button/?url=https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/&amp;media=&amp;description=An%20open%20source%20and%20production-ready%20motion%20library%20for%20React" target="_blank" rel="noopener"><i class="icon icon-pinterest"></i></a>
+<a class="share-item share-linkedin u-hover-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/&amp;title=An%20open%20source%20and%20production-ready%20motion%20library%20for%20React" target="_blank" rel="noopener"><i class="icon icon-linkedin"></i></a>
+<a class="share-item share-reddit u-hover-item" href="https://reddit.com/submit?url=https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/&amp;title=An%20open%20source%20and%20production-ready%20motion%20library%20for%20React" target="_blank" rel="noopener"><i class="icon icon-reddit"></i></a>
+<a class="share-item share-vk u-hover-item" href="https://vk.com/share.php?url=https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/&amp;title=An%20open%20source%20and%20production-ready%20motion%20library%20for%20React" target="_blank" rel="noopener"><i class="icon icon-vk"></i></a>
+</div> </div>
+</article>
+<div class="navigation">
+<div class="navigation-item navigation-previous">
+<img class="navigation-image lazyload u-object-fit" data-srcset="/content/images/2020/04/react-kiwi-dropdown.png 400w, /content/images/2020/04/react-kiwi-dropdown.png 750w, /content/images/2020/04/react-kiwi-dropdown.png 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="A easy-to-use and highly adjustable ReactJS dropdown">
+<span class="navigation-label">Previous Post</span>
+<h4 class="navigation-title">A easy-to-use and highly adjustable ReactJS dropdown</h4>
+<a class="u-permalink" href="https://reactjsexample.com/a-easy-to-use-and-highly-adjustable-reactjs-dropdown/"></a>
+</div>
+<div class="navigation-item navigation-next">
+<img class="navigation-image lazyload u-object-fit" data-srcset="/content/images/2020/04/react-dynamic-charts.png 400w, /content/images/2020/04/react-dynamic-charts.png 750w, /content/images/2020/04/react-dynamic-charts.png 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="A React library for creating animated charts visualizations based on dynamic data">
+<span class="navigation-label">Next Post</span>
+<h4 class="navigation-title">A React library for creating animated charts visualizations based on dynamic data</h4>
+<a class="u-permalink" href="https://reactjsexample.com/a-react-library-for-creating-animated-charts-visualizations-based-on-dynamic-data/"></a>
+</div>
+</div>
+<section class="related-posts">
+<h3 class="related-title">
+<span class="text">You might also like...</span>
+</h3>
+<div class="post-feed">
+<article class="post tag-apps-tag tag-motion tag-framer-motion tag-animation u-shadow">
+<div class="post-wrapper">
+<div class="post-media">
+<div class="u-placeholder same-height rectangle">
+<a class="post-image-link" href="https://reactjsexample.com/a-web-based-app-built-on-react-utilising-custom-framer-motion-animations-particlesjs/">
+<img class="post-image lazyload u-object-fit" data-srcset="/content/images/2022/09/Code-2022-08-52-28.jpg 400w, /content/images/2022/09/Code-2022-08-52-28.jpg 750w, /content/images/2022/09/Code-2022-08-52-28.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="A web-based app built on React, utilising custom Framer Motion animations, ParticlesJS">
+</a>
+</div>
+</div>
+<div class="post-right">
+<header class="post-header">
+<a class="post-tag" href="https://reactjsexample.com/tag/apps-tag/">Apps</a>
+<h2 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/a-web-based-app-built-on-react-utilising-custom-framer-motion-animations-particlesjs/">A web-based app built on React, utilising custom Framer Motion animations, ParticlesJS</a>
+</h2>
+</header>
+<div class="post-excerpt">
+A web-based app built on React, utilising custom Framer Motion animations, ParticlesJS
+</div>
+<span class="post-card-tags">09 September 2022</span>
+</div>
+</div>
+</article> <article class="post tag-menu tag-animation u-shadow">
+<div class="post-wrapper">
+<div class="post-media">
+<div class="u-placeholder same-height rectangle">
+<a class="post-image-link" href="https://reactjsexample.com/an-animated-and-accessible-command-menu/">
+<img class="post-image lazyload u-object-fit" data-srcset="/content/images/2022/07/Code-2022-30-56-46.jpg 400w, /content/images/2022/07/Code-2022-30-56-46.jpg 750w, /content/images/2022/07/Code-2022-30-56-46.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="An animated and accessible command menu">
+</a>
+</div>
+</div>
+<div class="post-right">
+<header class="post-header">
+<a class="post-tag" href="https://reactjsexample.com/tag/menu/">Menu</a>
+<h2 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/an-animated-and-accessible-command-menu/">An animated and accessible command menu</a>
+</h2>
+</header>
+<div class="post-excerpt">
+An animated and accessible command menu
+</div>
+<span class="post-card-tags">31 July 2022</span>
+</div>
+</div>
+</article> <article class="post tag-dark tag-switch tag-animation u-shadow">
+<div class="post-wrapper">
+<div class="post-media">
+<div class="u-placeholder same-height rectangle">
+<a class="post-image-link" href="https://reactjsexample.com/day-and-night-light-dark-theme-switch-with-pretty-cool-animation-for-react/">
+<img class="post-image lazyload u-object-fit" data-srcset="/content/images/2022/07/react-day-and-night-toggle.gif 400w, /content/images/2022/07/react-day-and-night-toggle.gif 750w, /content/images/2022/07/react-day-and-night-toggle.gif 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="Day and Night (light/dark) theme switch with pretty cool animation for React">
+</a>
+</div>
+</div>
+<div class="post-right">
+<header class="post-header">
+<a class="post-tag" href="https://reactjsexample.com/tag/dark/">Dark</a>
+<h2 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/day-and-night-light-dark-theme-switch-with-pretty-cool-animation-for-react/">Day and Night (light/dark) theme switch with pretty cool animation for React</a>
+</h2>
+</header>
+<div class="post-excerpt">
+Day and Night (light/dark) theme switch with pretty cool animation for React
+</div>
+<span class="post-card-tags">27 July 2022</span>
+</div>
+</div>
+</article> </div>
+</section>
+<section class="author u-shadow">
+<section class="subscribe-form">
+<h3 class="subscribe-form-title">Subscribe to React.js Examples</h3>
+<p>Get the latest posts delivered right to your inbox</p>
+<form method="post" action="https://reactjsexample.com/subscribe/" class="">
+<input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location" value="https://reactjsexample.com/an-open-source-and-production-ready-motion-library-for-react/"><input class="referrer" type="hidden" name="referrer" value="https://www.google.com/">
+<div class="form-group">
+<input class="subscribe-email" type="email" name="email" placeholder="youremail@example.com">
+</div>
+<button class="" type="submit"><span>Subscribe</span></button>
+<script>
+    (function(g,h,o,s,t){
+        var buster = function(b,m) {
+            h[o]('input.'+b).forEach(function (i) {
+                i.value=i.value || m;
+            });
+        };
+        buster('location', g.location.href);
+        buster('referrer', h.referrer);
+    })(window,document,'querySelectorAll','value');
+</script>
+</form>
+</section>
+</section>
+</main>
+</div>
+</div>
+<div class="sidebar-column col-xl-3 col-lg-4 hidden-xs hidden-sm hidden-md" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+ <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none;"><aside class="widget-area">
+ <div class="widget widget-tags u-shadow">
+<div class="gg-card2">
+
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5680150941998747" data-ad-slot="9627773903"></ins>
+
+</div>
+</div>
+<div class="widget widget-tags u-shadow">
+<h4 class="widget-title">Tags</h4>
+<div class="tag-feed">
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/apps-tag/">
+<span class="tag-name">Apps</span>
+<span class="tag-count">979</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/typescript/">
+<span class="tag-name">TypeScript</span>
+<span class="tag-count">548</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/hooks/">
+<span class="tag-name">Hooks</span>
+<span class="tag-count">330</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/ui/">
+<span class="tag-name">UI</span>
+<span class="tag-count">303</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/nextjs/">
+<span class="tag-name">Nextjs</span>
+<span class="tag-count">274</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/javascript/">
+<span class="tag-name">Javascript</span>
+<span class="tag-count">234</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/tailwind-css/">
+<span class="tag-name">Tailwind CSS</span>
+<span class="tag-count">224</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/games/">
+<span class="tag-name">Games</span>
+<span class="tag-count">222</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/website/">
+<span class="tag-name">WebSite</span>
+<span class="tag-count">213</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/redux/">
+<span class="tag-name">Redux</span>
+<span class="tag-count">200</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/starter/">
+<span class="tag-name">Starter</span>
+<span class="tag-count">156</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/images/">
+<span class="tag-name">Images</span>
+<span class="tag-count">154</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/state/">
+<span class="tag-name">State</span>
+<span class="tag-count">148</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/api/">
+<span class="tag-name">API</span>
+<span class="tag-count">146</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/miscellaneous/">
+<span class="tag-name">Miscellaneous</span>
+<span class="tag-count">144</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/templates/">
+<span class="tag-name">Templates</span>
+<span class="tag-count">140</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/animation/">
+<span class="tag-name">Animation</span>
+<span class="tag-count">135</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/boilerplate/">
+<span class="tag-name">Boilerplate</span>
+<span class="tag-count">134</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/editor/">
+<span class="tag-name">Editor</span>
+<span class="tag-count">126</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/chart/">
+<span class="tag-name">Chart</span>
+<span class="tag-count">124</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/react-native/">
+<span class="tag-name">React Native</span>
+<span class="tag-count">116</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/reactjs/">
+<span class="tag-name">Reactjs</span>
+<span class="tag-count">114</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/todo/">
+<span class="tag-name">Todo</span>
+<span class="tag-count">113</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/form/">
+<span class="tag-name">Form</span>
+<span class="tag-count">112</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/firebase/">
+<span class="tag-name">Firebase</span>
+<span class="tag-count">108</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/tool/">
+<span class="tag-name">Tool</span>
+<span class="tag-count">107</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/calendar/">
+<span class="tag-name">Calendar</span>
+<span class="tag-count">106</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/react-router/">
+<span class="tag-name">Router</span>
+<span class="tag-count">100</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/ecommerce/">
+<span class="tag-name">Ecommerce</span>
+<span class="tag-count">93</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/scroll/">
+<span class="tag-name">Scroll</span>
+<span class="tag-count">92</span>
+</a>
+</div>
+</div>
+</div> <div class="widget widget-recent u-shadow">
+<h4 class="widget-title">Recent Posts</h4>
+<div class="recent-posts">
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/splitwise-a-bill-spliting-application-using-react/">SplitWise - A bill spliting application using React</a>
+</h5>
+<time class="post-date" datetime="2022-09-12">
+Sep 12, 2022
+</time></header> </article>
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/twitter-clone-with-react-js-typescript-and-googleauth/">Twitter Clone with REACT.JS, Typescript, and GoogleAuth</a>
+</h5>
+<time class="post-date" datetime="2022-09-12">
+Sep 12, 2022
+</time></header> </article>
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/cuteanime-a-website-where-you-can-watch-anime-with-japanese-subtitles/">Cuteanime - A website where you can watch anime with Japanese subtitles</a>
+</h5>
+<time class="post-date" datetime="2022-09-12">
+Sep 12, 2022
+</time></header> </article>
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/interactive-gantt-chart-for-react-with-typescript/">Interactive Gantt Chart for React with TypeScript</a>
+</h5>
+<time class="post-date" datetime="2022-09-12">
+Sep 12, 2022
+</time></header> </article>
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/a-web-gui-for-inpainting-with-stable-diffusion-using-the-replicate-api/">A web GUI for inpainting with Stable Diffusion using the Replicate API</a>
+</h5>
+<time class="post-date" datetime="2022-09-12">
+Sep 12, 2022
+</time></header> </article>
+</div>
+</div>
+<div class="widget widget-recent u-shadow">
+<div class="gg-card3">
+
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-5680150941998747" data-ad-slot="3460995508"></ins>
+
+</div>
+</div></aside></div></div>
+</div>
+</div>
+<link rel="stylesheet" href="./An open source and production-ready motion library for React_files/prism.css">
+</div>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-inner">
+<div class="copyright ">
+<a href="https://reactjsexample.com/about/">About</a>&nbsp; | &nbsp;<a href="https://reactjsexample.com/contact/">Contact</a>&nbsp; | &nbsp;<a href="https://reactjsexample.com/privacy-policy/">Privacy Policy</a>&nbsp; | &nbsp;<a href="https://reactjsexample.com/submit-project/">Submit A Project</a>
+</div>
+<div class="social">
+</div>
+<div class="copyright">
+Powered by <a href="https://reactjsexample.com/" target="_blank">React.js Examples</a>
+</div>
+</div>
+</div>
+</footer></div>
+<script src="./An open source and production-ready motion library for React_files/jquery-3.2.1.min.js.download"></script>
+<script src="./An open source and production-ready motion library for React_files/jquery.githubRepoWidget.min.js.download"></script>
+<script src="./An open source and production-ready motion library for React_files/main.min.js.download"></script>
+<script type="text/javascript" src="./An open source and production-ready motion library for React_files/prism.js.download"></script>
+<script src="./An open source and production-ready motion library for React_files/nav.js.download"></script>
+<script data-isso="https://reactjsexample.com/comment" src="./An open source and production-ready motion library for React_files/embed.min.js.download" data-isso-gravatar="true" data-isso-require-author="true" data-isso-require-email="true" data-isso-avatar="false"></script>
+<script type="text/javascript">
+var links = document.querySelectorAll("a");
+for (var i = 0; i < links.length; i++) {
+    if (links[i].hostname != window.location.hostname) {
+        links[i].target = "_blank";
+        links[i].rel = "noopener";
+    }
+}
+</script>
+<script async="" defer="" data-website-id="1be834c8-ce2a-4298-a578-6027d48c6d2a" src="./An open source and production-ready motion library for React_files/umami.js.download"></script>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
